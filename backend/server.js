@@ -20,7 +20,7 @@ const businessRoutes = require('./routes/businesses');
 const employeeRoutes = require('./routes/employees');
 const searchRoutes = require('./routes/search');
 
-app.use('/api/users', authRoutes);
+app.use('/api/auth', authRoutes);
 app.use('/api/buildings', buildingRoutes);
 app.use('/api/floors', floorRoutes);
 app.use('/api/rooms', roomRoutes);

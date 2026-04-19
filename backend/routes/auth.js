@@ -13,7 +13,7 @@ router.post('/login', async (req, res) => {
     }
     
     // In a real app, send back a JWT. Here we just send success to demo login flow.
-    res.json({ message: 'Login successful', role: user.role, username: user.username });
+    res.json({ message: 'Login successful', user: { role: user.role, username: user.username } });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
